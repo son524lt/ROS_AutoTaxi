@@ -1,0 +1,2 @@
+prius_description:prius_msgs:self_driving_car
+-DCATKIN_DEVEL_PREFIX=/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/devel -DCMAKE_INSTALL_PREFIX=/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/install -G Unix Makefiles

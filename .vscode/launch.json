@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "ROS: Launch Gazebo",
+        "type": "cppdbg",
+        "request": "launch",
+        "preLaunchTask": "catkin_make",
+        "program": "${workspaceFolder}/devel/lib/${workspaceFolderBasename}/gazebo_ros",
+        "args": [
+          "roslaunch",
+          "my_package_name gazebo.launch"
+        ],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}/devel/lib/${workspaceFolderBasename}",
+        "environment": [],
+        "externalConsole": false
+      }
+    ]
+}
