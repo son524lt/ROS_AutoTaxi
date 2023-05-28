@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/devel/lib/python3/dist-packages/prius_msgs/msg/_Control.py"
-  "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/devel/lib/python3/dist-packages/prius_msgs/msg/__init__.py"
+  "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/devel/lib/python3/dist-packages/prius_msgs/msg/_Control.py"
+  "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/devel/lib/python3/dist-packages/prius_msgs/msg/__init__.py"
   "CMakeFiles/prius_msgs_generate_messages_py"
 )
 

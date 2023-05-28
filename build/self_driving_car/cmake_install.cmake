@@ -1,8 +1,8 @@
-# Install script for directory: /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src/self_driving_car
+# Install script for directory: /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src/self_driving_car
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/install")
+  set(CMAKE_INSTALL_PREFIX "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/self_driving_car/catkin_generated/installspace/self_driving_car.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/self_driving_car/catkin_generated/installspace/self_driving_car.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/self_driving_car/cmake" TYPE FILE FILES
-    "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/self_driving_car/catkin_generated/installspace/self_driving_carConfig.cmake"
-    "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/self_driving_car/catkin_generated/installspace/self_driving_carConfig-version.cmake"
+    "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/self_driving_car/catkin_generated/installspace/self_driving_carConfig.cmake"
+    "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/self_driving_car/catkin_generated/installspace/self_driving_carConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/self_driving_car" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src/self_driving_car/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/self_driving_car" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src/self_driving_car/package.xml")
 endif()
 

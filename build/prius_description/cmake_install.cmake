@@ -1,8 +1,8 @@
-# Install script for directory: /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src/prius_description
+# Install script for directory: /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src/prius_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/install")
+  set(CMAKE_INSTALL_PREFIX "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/prius_description/catkin_generated/installspace/prius_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/prius_description/catkin_generated/installspace/prius_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/prius_description/cmake" TYPE FILE FILES
-    "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/prius_description/catkin_generated/installspace/prius_descriptionConfig.cmake"
-    "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/prius_description/catkin_generated/installspace/prius_descriptionConfig-version.cmake"
+    "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/prius_description/catkin_generated/installspace/prius_descriptionConfig.cmake"
+    "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/prius_description/catkin_generated/installspace/prius_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/prius_description" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src/prius_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/prius_description" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src/prius_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/prius_description" TYPE DIRECTORY FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src/prius_description/meshes")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/prius_description" TYPE DIRECTORY FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src/prius_description/meshes")
 endif()
 

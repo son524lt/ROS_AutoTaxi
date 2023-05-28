@@ -1,8 +1,8 @@
-# Install script for directory: /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src/prius_msgs
+# Install script for directory: /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src/prius_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/install")
+  set(CMAKE_INSTALL_PREFIX "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,53 +38,53 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/prius_msgs/msg" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src/prius_msgs/msg/Control.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/prius_msgs/msg" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src/prius_msgs/msg/Control.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/prius_msgs/cmake" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/prius_msgs/catkin_generated/installspace/prius_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/prius_msgs/cmake" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/prius_msgs/catkin_generated/installspace/prius_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/devel/include/prius_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/devel/include/prius_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/devel/share/roseus/ros/prius_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/devel/share/roseus/ros/prius_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/devel/share/common-lisp/ros/prius_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/devel/share/common-lisp/ros/prius_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/devel/share/gennodejs/ros/prius_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/devel/share/gennodejs/ros/prius_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/devel/lib/python3/dist-packages/prius_msgs")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/devel/lib/python3/dist-packages/prius_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/devel/lib/python3/dist-packages/prius_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/devel/lib/python3/dist-packages/prius_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/prius_msgs/catkin_generated/installspace/prius_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/prius_msgs/catkin_generated/installspace/prius_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/prius_msgs/cmake" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/prius_msgs/catkin_generated/installspace/prius_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/prius_msgs/cmake" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/prius_msgs/catkin_generated/installspace/prius_msgs-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/prius_msgs/cmake" TYPE FILE FILES
-    "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/prius_msgs/catkin_generated/installspace/prius_msgsConfig.cmake"
-    "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/prius_msgs/catkin_generated/installspace/prius_msgsConfig-version.cmake"
+    "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/prius_msgs/catkin_generated/installspace/prius_msgsConfig.cmake"
+    "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/prius_msgs/catkin_generated/installspace/prius_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/prius_msgs" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src/prius_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/prius_msgs" TYPE FILE FILES "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src/prius_msgs/package.xml")
 endif()
 

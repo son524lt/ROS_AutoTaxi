@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src
+CMAKE_SOURCE_DIR = /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build
+CMAKE_BINARY_DIR = /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build
 
 # Utility rule file for prius_msgs_genlisp.
 
@@ -63,10 +63,10 @@ prius_msgs/CMakeFiles/prius_msgs_genlisp.dir/build: prius_msgs_genlisp
 .PHONY : prius_msgs/CMakeFiles/prius_msgs_genlisp.dir/build
 
 prius_msgs/CMakeFiles/prius_msgs_genlisp.dir/clean:
-	cd /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/prius_msgs && $(CMAKE_COMMAND) -P CMakeFiles/prius_msgs_genlisp.dir/cmake_clean.cmake
+	cd /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/prius_msgs && $(CMAKE_COMMAND) -P CMakeFiles/prius_msgs_genlisp.dir/cmake_clean.cmake
 .PHONY : prius_msgs/CMakeFiles/prius_msgs_genlisp.dir/clean
 
 prius_msgs/CMakeFiles/prius_msgs_genlisp.dir/depend:
-	cd /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src/prius_msgs /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/prius_msgs /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/prius_msgs/CMakeFiles/prius_msgs_genlisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src/prius_msgs /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/prius_msgs /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/prius_msgs/CMakeFiles/prius_msgs_genlisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : prius_msgs/CMakeFiles/prius_msgs_genlisp.dir/depend
 

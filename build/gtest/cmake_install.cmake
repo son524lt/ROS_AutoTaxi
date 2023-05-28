@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/install")
+  set(CMAKE_INSTALL_PREFIX "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/gtest/googlemock/cmake_install.cmake")
+  include("/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/gtest/googlemock/cmake_install.cmake")
 
 endif()
 

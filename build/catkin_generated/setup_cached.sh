@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build'
+export CMAKE_PREFIX_PATH="/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/devel:$CMAKE_PREFIX_PATH"
+export PWD='/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src:$ROS_PACKAGE_PATH"

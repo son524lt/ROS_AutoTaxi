@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src
+CMAKE_SOURCE_DIR = /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build
+CMAKE_BINARY_DIR = /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 

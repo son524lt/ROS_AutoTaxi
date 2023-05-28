@@ -1,4 +1,4 @@
-prefix=/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/install
+prefix=/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/install
 
 Name: prius_description
 Description: Description of prius_description

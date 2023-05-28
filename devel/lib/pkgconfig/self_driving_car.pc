@@ -1,4 +1,4 @@
-prefix=/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/devel
+prefix=/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/devel
 
 Name: self_driving_car
 Description: Description of self_driving_car

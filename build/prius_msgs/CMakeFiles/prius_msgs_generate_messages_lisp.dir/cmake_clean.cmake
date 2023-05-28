@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/devel/share/common-lisp/ros/prius_msgs/msg/Control.lisp"
+  "/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/devel/share/common-lisp/ros/prius_msgs/msg/Control.lisp"
   "CMakeFiles/prius_msgs_generate_messages_lisp"
 )
 

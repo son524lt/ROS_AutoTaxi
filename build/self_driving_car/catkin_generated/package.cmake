@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "self_driving_car")
 set(self_driving_car_VERSION "0.0.0")
-set(self_driving_car_MAINTAINER "shid <shid@todo.todo>")
+set(self_driving_car_MAINTAINER "son524lt <son524lt@gmail.com>")
 set(self_driving_car_PACKAGE_FORMAT "2")
 set(self_driving_car_BUILD_DEPENDS "fake_localization" "gazebo_ros" "message_generation" "pcl_ros" "prius_description" "prius_msgs" "robot_state_publisher" "roscpp" "rospy" "sensor_msgs" "std_msgs" "teb_local_planner" "tf2_ros")
 set(self_driving_car_BUILD_EXPORT_DEPENDS "fake_localization" "gazebo_ros" "pcl_ros" "prius_description" "prius_msgs" "robot_state_publisher" "roscpp" "rospy" "sensor_msgs" "std_msgs" "teb_local_planner" "tf2_ros")

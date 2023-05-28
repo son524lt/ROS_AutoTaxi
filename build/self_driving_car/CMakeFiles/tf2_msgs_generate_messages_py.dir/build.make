@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src
+CMAKE_SOURCE_DIR = /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build
+CMAKE_BINARY_DIR = /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build
 
 # Utility rule file for tf2_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ self_driving_car/CMakeFiles/tf2_msgs_generate_messages_py.dir/build: tf2_msgs_ge
 .PHONY : self_driving_car/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
 
 self_driving_car/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean:
-	cd /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/self_driving_car && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/self_driving_car && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : self_driving_car/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
 
 self_driving_car/CMakeFiles/tf2_msgs_generate_messages_py.dir/depend:
-	cd /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/src/self_driving_car /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/self_driving_car /home/shid/Documents/code/ROS_project/ROSGazebo_AutoTaxi/build/self_driving_car/CMakeFiles/tf2_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/src/self_driving_car /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/self_driving_car /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/self_driving_car/CMakeFiles/tf2_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : self_driving_car/CMakeFiles/tf2_msgs_generate_messages_py.dir/depend
 
