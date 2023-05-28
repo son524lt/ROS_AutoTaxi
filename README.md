@@ -26,5 +26,4 @@ This project relies on the following ROS packages and dependencies:
 - rospy
 - teb_local_planner
 - robot_state_publisher
-- pointcloud
-- [Add any additional dependencies here]
+- pointcloud_to_laserscan
