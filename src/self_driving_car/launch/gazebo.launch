@@ -12,7 +12,7 @@
   <arg name="enable_ekf"                            default="true"/>
 
   <!-- Name of the world -->
-  <arg name="world"                                 default="mcity"/>
+  <arg name="world"                                 default="Lane_follow_test"/>
   <!-- Path to the world file -->
   <arg name="world_file"                            default="$(find self_driving_car)/worlds/$(arg world).world"/>
   <!-- <arg name="world_file"                            default="/usr/share/gazebo-11/worlds/robocup14_spl_field.world"/> -->
@@ -67,10 +67,10 @@
   </include>
 
   <!-- Spawn robot in Gazebo -->
-<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+<!-- <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
     args="-file $(find prius_description)/urdf/prius.urdf -urdf -model $(arg robot_model_name) -x $(arg x)
       -y $(arg y) -z $(arg z) -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"
-    output="screen"/>
+    output="screen"/> -->
 
     
   <!-- Convert 3D velodyne scan to laser scan -->
