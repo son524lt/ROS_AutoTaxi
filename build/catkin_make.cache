@@ -1,2 +1,0 @@
-prius_description:prius_msgs:self_driving_car:simulator_resources
--DCATKIN_DEVEL_PREFIX=/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/devel -DCMAKE_INSTALL_PREFIX=/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/install -G Unix Makefiles

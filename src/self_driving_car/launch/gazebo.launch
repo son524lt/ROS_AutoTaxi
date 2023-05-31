@@ -20,7 +20,7 @@
   <!-- Set the initial pose of the robot's main body -->
   <arg name="x"                                     default="0.0"/>
   <arg name="y"                                     default="0.0"/>
-  <arg name="z"                                     default="100"/>
+  <arg name="z"                                     default="0.4"/>
   <arg name="roll"                                  default="0.0"/>
   <arg name="pitch"                                 default="0.0"/>
   <arg name="yaw"                                   default="0.0"/>

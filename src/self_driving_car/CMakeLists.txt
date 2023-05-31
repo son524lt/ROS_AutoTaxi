@@ -123,24 +123,26 @@ catkin_package(
 ###########
 ## Build ##
 ###########
-
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
+  # include
   ${catkin_INCLUDE_DIRS}
-)
-
-## Declare a C++ library
-# add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/self_driving_car.cpp
-# )
-
-add_library(PriusHybridPlugin SHARED plugins/PriusHybridPlugin.cc)
-# target_link_libraries(PriusHybridPlugin ${GAZEBO_LIBRARIES} ${IGNITION-MSGS_LIBRARIES})
-## Add cmake target dependencies of the library
-## as an example, code may need to be generated before libraries
-## either from message generation or dynamic reconfigure
+  )
+  
+  ## Declare a C++ library
+  # add_library(${PROJECT_NAME}
+  #   src/${PROJECT_NAME}/self_driving_car.cpp
+  # )
+  # find_package(ignition-edifice REQUIRED)
+  # include_directories(${ignition-edifice_INCLUDE_DIRS})
+  # target_link_libraries(your_target_name ${ignition-edifice_LIBRARIES})
+  
+  # add_library(PriusHybridPlugin SHARED plugins/PriusHybridPlugin.cc)
+  # target_link_libraries(PriusHybridPlugin ${GAZEBO_LIBRARIES} ${IGNITION-MSGS_LIBRARIES})
+  ## Add cmake target dependencies of the library
+  ## as an example, code may need to be generated before libraries
+  ## either from message generation or dynamic reconfigure
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
