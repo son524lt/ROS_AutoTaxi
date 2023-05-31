@@ -1,51 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <launch>
-
-  <!-- GAZEBO ARGUMENTS -->
-  <!-- Run Gazebo headless -->
+  <arg name="model" default="$(find prius_description)/urdf/prius.urdf"/>
+  <param name="robot_description" textfile="$(arg model)"/>
   <arg name="headless"                              default="false"/>
-  <!-- Model path -->
   <arg name="model_path"                            default="$(find simulator_resources)/models"/>
   <arg name="robot_namespace"                       default=""/>
   <arg name="robot_model_name"                      default="prius"/>
   <arg name="enable_ekf"                            default="true"/>
-
-  <!-- Name of the world -->
   <arg name="world"                                 default="maze_solving"/>
-  <!-- Path to the world file -->
   <arg name="world_file"                            default="$(find simulator_resources)/worlds/$(arg world).world"/>
   <arg name="laser_enabled"							            default="true"/>
-
-  <!-- Set the initial pose of the robot's main body -->
-  <arg name="x"                                     default="0.0"/>
-  <arg name="y"                                     default="0.0"/>
+  <arg name="x"                                     default="-50.0"/>
+  <arg name="y"                                     default="26.5"/>
   <arg name="z"                                     default="0.4"/>
   <arg name="roll"                                  default="0.0"/>
   <arg name="pitch"                                 default="0.0"/>
   <arg name="yaw"                                   default="0.0"/>
-  <!-- Start paused -->
   <arg name="paused"                                default="false"/>
-  <!-- Use simulation clock -->
   <arg name="use_sim_time"                          default="true"/>
-  <!-- Debug mode -->
   <arg name="debug"                                 default="false"/>
-  <!-- Verbose mode -->
   <arg name="verbose"                               default="true"/>
-
-  <arg name="laser_scan_min_height"                  default="0.0"/>
-  <arg name="laser_scan_max_height"                  default="0.1"/>
-
-  <!-- GUI ARGUMENTS -->
-  <!-- Enable/disable Gazebo GUI -->
   <arg name="run_gui"                               default="true"/>
-  
-  <!-- ROBOT ARGUMENTS -->
-  <!-- Name of the robot description parameter -->
-  <arg name="robot_description" default="robot_description"/>
-  <!-- Name of the robot description parameter -->
-
-
   <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" >
     <!-- <remap from="robot_description" to="different_robot_description" /> -->
     <!-- <remap from="joint_states" to="/prius/joint_states" /> -->
@@ -54,7 +30,6 @@
     <!-- <remap from="base_pose_ground_truth" to="/prius/base_pose_ground_truth"/> -->
   </node>
   <node pkg="tf2_ros" type="static_transform_publisher" name="very_inaccurate_odom" args="0 0 0 0 0 0 odom base_link"/>
-  <!-- Load Gazebo world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <env name="GAZEBO_MODEL_PATH" value="$(arg model_path)"/>
     <arg name="world_name"        value="$(arg world_file)"/>
@@ -66,11 +41,9 @@
     <arg name="verbose"           value="$(arg verbose)"/>
   </include>
 
-  <!-- Spawn robot in Gazebo -->
-<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
-    args="-file $(find prius_description)/urdf/prius.urdf -urdf -model $(arg robot_model_name) -x $(arg x)
-      -y $(arg y) -z $(arg z) -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"
-    output="screen"/>
-    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find prius_description)/rviz/demo.rviz" />
-
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+      args="-file $(find prius_description)/urdf/prius.urdf -urdf -model $(arg robot_model_name) -x $(arg x)
+        -y $(arg y) -z $(arg z) -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"
+      output="screen"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find prius_description)/rviz/demo.rviz" />
 </launch>
