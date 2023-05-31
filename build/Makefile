@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named _catkin_empty_exported_target
+
+# Build rule for target.
+_catkin_empty_exported_target: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
+.PHONY : _catkin_empty_exported_target
+
+# fast build rule for target.
+_catkin_empty_exported_target/fast:
+	$(MAKE) -f simulator_resources/CMakeFiles/_catkin_empty_exported_target.dir/build.make simulator_resources/CMakeFiles/_catkin_empty_exported_target.dir/build
+.PHONY : _catkin_empty_exported_target/fast
+
+#=============================================================================
 # Target rules for targets named prius_msgs_generate_messages_py
 
 # Build rule for target.
@@ -296,19 +309,6 @@ prius_msgs_generate_messages_py: cmake_check_build_system
 prius_msgs_generate_messages_py/fast:
 	$(MAKE) -f prius_msgs/CMakeFiles/prius_msgs_generate_messages_py.dir/build.make prius_msgs/CMakeFiles/prius_msgs_generate_messages_py.dir/build
 .PHONY : prius_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named _catkin_empty_exported_target
-
-# Build rule for target.
-_catkin_empty_exported_target: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
-.PHONY : _catkin_empty_exported_target
-
-# fast build rule for target.
-_catkin_empty_exported_target/fast:
-	$(MAKE) -f prius_msgs/CMakeFiles/_catkin_empty_exported_target.dir/build.make prius_msgs/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
 # Target rules for targets named prius_msgs_genpy
@@ -467,32 +467,6 @@ prius_msgs_generate_messages_cpp/fast:
 .PHONY : prius_msgs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named prius_msgs_genlisp
-
-# Build rule for target.
-prius_msgs_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 prius_msgs_genlisp
-.PHONY : prius_msgs_genlisp
-
-# fast build rule for target.
-prius_msgs_genlisp/fast:
-	$(MAKE) -f prius_msgs/CMakeFiles/prius_msgs_genlisp.dir/build.make prius_msgs/CMakeFiles/prius_msgs_genlisp.dir/build
-.PHONY : prius_msgs_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named prius_msgs_generate_messages
-
-# Build rule for target.
-prius_msgs_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 prius_msgs_generate_messages
-.PHONY : prius_msgs_generate_messages
-
-# fast build rule for target.
-prius_msgs_generate_messages/fast:
-	$(MAKE) -f prius_msgs/CMakeFiles/prius_msgs_generate_messages.dir/build.make prius_msgs/CMakeFiles/prius_msgs_generate_messages.dir/build
-.PHONY : prius_msgs_generate_messages/fast
-
-#=============================================================================
 # Target rules for targets named prius_msgs_geneus
 
 # Build rule for target.
@@ -517,6 +491,32 @@ prius_msgs_generate_messages_eus: cmake_check_build_system
 prius_msgs_generate_messages_eus/fast:
 	$(MAKE) -f prius_msgs/CMakeFiles/prius_msgs_generate_messages_eus.dir/build.make prius_msgs/CMakeFiles/prius_msgs_generate_messages_eus.dir/build
 .PHONY : prius_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named prius_msgs_generate_messages
+
+# Build rule for target.
+prius_msgs_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 prius_msgs_generate_messages
+.PHONY : prius_msgs_generate_messages
+
+# fast build rule for target.
+prius_msgs_generate_messages/fast:
+	$(MAKE) -f prius_msgs/CMakeFiles/prius_msgs_generate_messages.dir/build.make prius_msgs/CMakeFiles/prius_msgs_generate_messages.dir/build
+.PHONY : prius_msgs_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named prius_msgs_genlisp
+
+# Build rule for target.
+prius_msgs_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 prius_msgs_genlisp
+.PHONY : prius_msgs_genlisp
+
+# fast build rule for target.
+prius_msgs_genlisp/fast:
+	$(MAKE) -f prius_msgs/CMakeFiles/prius_msgs_genlisp.dir/build.make prius_msgs/CMakeFiles/prius_msgs_genlisp.dir/build
+.PHONY : prius_msgs_genlisp/fast
 
 #=============================================================================
 # Target rules for targets named gazebo_msgs_generate_messages_eus
@@ -2117,6 +2117,19 @@ costmap_converter_generate_messages_nodejs/fast:
 	$(MAKE) -f self_driving_car/CMakeFiles/costmap_converter_generate_messages_nodejs.dir/build.make self_driving_car/CMakeFiles/costmap_converter_generate_messages_nodejs.dir/build
 .PHONY : costmap_converter_generate_messages_nodejs/fast
 
+#=============================================================================
+# Target rules for targets named PriusHybridPlugin
+
+# Build rule for target.
+PriusHybridPlugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 PriusHybridPlugin
+.PHONY : PriusHybridPlugin
+
+# fast build rule for target.
+PriusHybridPlugin/fast:
+	$(MAKE) -f self_driving_car/CMakeFiles/PriusHybridPlugin.dir/build.make self_driving_car/CMakeFiles/PriusHybridPlugin.dir/build
+.PHONY : PriusHybridPlugin/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2139,8 +2152,8 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... prius_msgs_generate_messages_py"
 	@echo "... _catkin_empty_exported_target"
+	@echo "... prius_msgs_generate_messages_py"
 	@echo "... prius_msgs_genpy"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_eus"
@@ -2153,10 +2166,10 @@ help:
 	@echo "... prius_msgs_gencpp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... prius_msgs_generate_messages_cpp"
-	@echo "... prius_msgs_genlisp"
-	@echo "... prius_msgs_generate_messages"
 	@echo "... prius_msgs_geneus"
 	@echo "... prius_msgs_generate_messages_eus"
+	@echo "... prius_msgs_generate_messages"
+	@echo "... prius_msgs_genlisp"
 	@echo "... gazebo_msgs_generate_messages_eus"
 	@echo "... dynamic_reconfigure_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_nodejs"
@@ -2280,6 +2293,7 @@ help:
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... costmap_converter_generate_messages_eus"
 	@echo "... costmap_converter_generate_messages_nodejs"
+	@echo "... PriusHybridPlugin"
 .PHONY : help
 
 

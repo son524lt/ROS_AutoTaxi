@@ -80,6 +80,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -124,16 +134,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -2012,6 +2012,48 @@ costmap_converter_generate_messages_nodejs/fast:
 	cd /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build && $(MAKE) -f self_driving_car/CMakeFiles/costmap_converter_generate_messages_nodejs.dir/build.make self_driving_car/CMakeFiles/costmap_converter_generate_messages_nodejs.dir/build
 .PHONY : costmap_converter_generate_messages_nodejs/fast
 
+# Convenience name for target.
+self_driving_car/CMakeFiles/PriusHybridPlugin.dir/rule:
+	cd /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build && $(MAKE) -f CMakeFiles/Makefile2 self_driving_car/CMakeFiles/PriusHybridPlugin.dir/rule
+.PHONY : self_driving_car/CMakeFiles/PriusHybridPlugin.dir/rule
+
+# Convenience name for target.
+PriusHybridPlugin: self_driving_car/CMakeFiles/PriusHybridPlugin.dir/rule
+
+.PHONY : PriusHybridPlugin
+
+# fast build rule for target.
+PriusHybridPlugin/fast:
+	cd /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build && $(MAKE) -f self_driving_car/CMakeFiles/PriusHybridPlugin.dir/build.make self_driving_car/CMakeFiles/PriusHybridPlugin.dir/build
+.PHONY : PriusHybridPlugin/fast
+
+plugins/PriusHybridPlugin.o: plugins/PriusHybridPlugin.cc.o
+
+.PHONY : plugins/PriusHybridPlugin.o
+
+# target to build an object file
+plugins/PriusHybridPlugin.cc.o:
+	cd /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build && $(MAKE) -f self_driving_car/CMakeFiles/PriusHybridPlugin.dir/build.make self_driving_car/CMakeFiles/PriusHybridPlugin.dir/plugins/PriusHybridPlugin.cc.o
+.PHONY : plugins/PriusHybridPlugin.cc.o
+
+plugins/PriusHybridPlugin.i: plugins/PriusHybridPlugin.cc.i
+
+.PHONY : plugins/PriusHybridPlugin.i
+
+# target to preprocess a source file
+plugins/PriusHybridPlugin.cc.i:
+	cd /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build && $(MAKE) -f self_driving_car/CMakeFiles/PriusHybridPlugin.dir/build.make self_driving_car/CMakeFiles/PriusHybridPlugin.dir/plugins/PriusHybridPlugin.cc.i
+.PHONY : plugins/PriusHybridPlugin.cc.i
+
+plugins/PriusHybridPlugin.s: plugins/PriusHybridPlugin.cc.s
+
+.PHONY : plugins/PriusHybridPlugin.s
+
+# target to generate assembly for a file
+plugins/PriusHybridPlugin.cc.s:
+	cd /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build && $(MAKE) -f self_driving_car/CMakeFiles/PriusHybridPlugin.dir/build.make self_driving_car/CMakeFiles/PriusHybridPlugin.dir/plugins/PriusHybridPlugin.cc.s
+.PHONY : plugins/PriusHybridPlugin.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2020,6 +2062,7 @@ help:
 	@echo "... depend"
 	@echo "... install/local"
 	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... gazebo_msgs_generate_messages_eus"
 	@echo "... dynamic_reconfigure_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_nodejs"
@@ -2146,8 +2189,11 @@ help:
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... costmap_converter_generate_messages_eus"
 	@echo "... costmap_converter_generate_messages_nodejs"
+	@echo "... PriusHybridPlugin"
 	@echo "... rebuild_cache"
-	@echo "... list_install_components"
+	@echo "... plugins/PriusHybridPlugin.o"
+	@echo "... plugins/PriusHybridPlugin.i"
+	@echo "... plugins/PriusHybridPlugin.s"
 .PHONY : help
 
 

@@ -136,6 +136,8 @@ include_directories(
 #   src/${PROJECT_NAME}/self_driving_car.cpp
 # )
 
+add_library(PriusHybridPlugin SHARED plugins/PriusHybridPlugin.cc)
+# target_link_libraries(PriusHybridPlugin ${GAZEBO_LIBRARIES} ${IGNITION-MSGS_LIBRARIES})
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure

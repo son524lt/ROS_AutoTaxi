@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/gtest/cmake_install.cmake")
+  include("/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/simulator_resources/cmake_install.cmake")
   include("/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/prius_msgs/cmake_install.cmake")
   include("/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/prius_description/cmake_install.cmake")
   include("/home/shid/Documents/code/ROS_project/ROS_AutoTaxi/build/self_driving_car/cmake_install.cmake")

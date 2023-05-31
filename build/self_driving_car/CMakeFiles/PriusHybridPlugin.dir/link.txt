@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libPriusHybridPlugin.so -o /home/shid/Documents/code/ROS_project/ROS_AutoTaxi/devel/lib/libPriusHybridPlugin.so CMakeFiles/PriusHybridPlugin.dir/plugins/PriusHybridPlugin.cc.o 

@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("simulator_resources")
 subdirs("prius_msgs")
 subdirs("prius_description")
 subdirs("self_driving_car")
