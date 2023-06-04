@@ -1,4 +1,4 @@
-# ROS_AutoTaxi (still in maintain)
+# ROS_AutoTaxi (still maintaining)
 
 ROS_AutoTaxi is a self-driving car project developed using ROS Noetic. It simulates an autonomous taxi that performs various tasks such as autonomous navigation, sign detection, traffic light recognition, and lane tracking. The simulation uses the Prius model as the base vehicle.
 
