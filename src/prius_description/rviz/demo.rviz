@@ -352,6 +352,31 @@ Visualization Manager:
       Value: true
     - Class: rviz/Image
       Enabled: true
+      Image Topic: /prius/front_camera/lane_detection
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: lane_detection
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /rrbot/camera1/image_raw
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: rrbot_camera1
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+
+    - Class: rviz/Image
+      Enabled: true
       Image Topic: /prius/back_camera/image_raw
       Max Value: 1
       Median window: 5

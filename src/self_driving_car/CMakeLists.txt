@@ -16,6 +16,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   teb_local_planner
   tf2_ros
+  cv_bridge
 )
 
 catkin_package(
@@ -34,14 +35,26 @@ add_library(PriusHybridPlugin SHARED plugins/PriusHybridPlugin.cc)
 target_link_libraries(PriusHybridPlugin ${GAZEBO_LIBRARIES} ${IGNITION-MSGS_LIBRARIES} gazebo) 
 target_include_directories(PriusHybridPlugin PRIVATE ${GAZEBO_INCLUDE_DIRS})
 
-add_executable(keyboard src/keyControl.cpp)
-target_link_libraries(keyboard ${catkin_LIBRARIES})
+catkin_install_python(PROGRAMS scripts/lane_detection.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
-add_executable(demo src/main.cpp)
-target_link_libraries(demo ${catkin_LIBRARIES})
+install(DIRECTORY launch
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
 
-add_executable(lanefl src/lane_follow.py)
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+)
+# add_executable(keyboard src/keyControl.cpp)
+# target_link_libraries(keyboard ${catkin_LIBRARIES})
 
-set_target_properties(lanefl PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_BIN_DESTINATION}
-    )
+# add_executable(demo src/main.cpp)
+# target_link_libraries(demo ${catkin_LIBRARIES})
+
+# add_executable(lanefl src/lane_follow.py)
+
+# set_target_properties(lanefl PROPERTIES
+#     RUNTIME_OUTPUT_DIRECTORY ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_BIN_DESTINATION}
+#   )
+

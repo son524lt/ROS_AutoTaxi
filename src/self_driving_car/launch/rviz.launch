@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" >
+        <!-- <remap from="robot_description" to="different_robot_description" /> -->
+        <!-- <remap from="joint_states" to="/prius/joint_states" /> -->
+    </node>
+    <!-- Start RViz -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find prius_description)/rviz/demo.rviz"/>
+</launch>
