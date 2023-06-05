@@ -11,14 +11,14 @@ ROS_AutoTaxi is a self-driving car project developed using ROS Noetic. It simula
 
 ## Dependencies
 
-    This project runs on ROS noetic
+- This project runs on ROS noetic
 
-    To install all ROS dependencies of this project, run command: 
+- To install all ROS dependencies of this project, run command: 
     ```bash
     rosdep install --from-paths src --ignore-src -r -y
     ```
 
-    This project requires opencv, to install, do the following commands:
+- This project requires opencv, to install, do the following commands:
 
     * Install OpenCV using the package manager
     ```bash
@@ -50,7 +50,7 @@ ROS_AutoTaxi is a self-driving car project developed using ROS Noetic. It simula
     ```
 
 ## Installation
-
+- To install this project, follow these steps
     * Clone my repository
     ```bash
     git clone https://github.com/son524lt/ROS_AutoTaxi.git
