@@ -4,7 +4,7 @@
 #include <cv_bridge/cv_bridge.h>
 #include <opencv2/opencv.hpp>
 
-double expected_deviation = -60;
+double expected_deviation = -70;
 double Kp = 0.05;
 double Ki = 0.0001;
 double Kd = 0.04;

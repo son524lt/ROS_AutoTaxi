@@ -10,20 +10,52 @@ ROS_AutoTaxi is a self-driving car project developed using ROS Noetic. It simula
 - Lane tracking: The car utilizes sensor data to perform lane tracking and maintain its position within the designated lanes.
 
 ## Dependencies
+    This project runs on ROS noetic
 
-This project relies on the following ROS packages and dependencies:
+    To install all ROS dependencies of this project, run command: 
+    ```bash
+    rosdep install --from-paths src --ignore-src -r -y
+    ```
 
-- message_runtime
-- std_msgs
-- message_generation
-- tf2_ros
-- sensor_msgs
-- prius_msgs
-- prius_description
-- fake_localization
-- gazebo_ros
-- roscpp
-- rospy
-- teb_local_planner
-- robot_state_publisher
-- pointcloud_to_laserscan
+    This project requires opencv, to install, do the following commands:
+
+    * Install OpenCV using the package manager
+    ```bash
+    sudo apt-get install libopencv-dev
+
+    ```
+
+    * Install required dependencies
+    ```bash
+    sudo apt-get install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+    ```
+
+    * Clone the OpenCV repository
+    ```bash
+    git clone https://github.com/opencv/opencv.git
+    ```
+    * Create a build directory and navigate into it and configure the build
+    ```bash
+    cd opencv
+    mkdir build
+    cd build
+    cmake ..
+    ```
+
+    * Build and install OpenCV
+    ```bash
+    make -j4 # Use a higher number if you have more CPU cores
+    sudo make install
+    ```
+
+## Installation
+    * Clone my repository
+    ```bash
+    git clone https://github.com/son524lt/ROS_AutoTaxi.git
+    ```
+
+    * Make the project
+    ```bash
+    catkin_make
+    ```
+## Demo
