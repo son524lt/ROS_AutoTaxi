@@ -10,6 +10,7 @@ ROS_AutoTaxi is a self-driving car project developed using ROS Noetic. It simula
 - Lane tracking: The car utilizes sensor data to perform lane tracking and maintain its position within the designated lanes.
 
 ## Dependencies
+
     This project runs on ROS noetic
 
     To install all ROS dependencies of this project, run command: 
@@ -49,6 +50,7 @@ ROS_AutoTaxi is a self-driving car project developed using ROS Noetic. It simula
     ```
 
 ## Installation
+
     * Clone my repository
     ```bash
     git clone https://github.com/son524lt/ROS_AutoTaxi.git
