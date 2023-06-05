@@ -368,44 +368,7 @@ Visualization Manager:
       Max Value: 1
       Median window: 5
       Min Value: 0
-      Name: rrbot_camera1
-      Normalize Range: true
-      Queue Size: 2
-      Transport Hint: raw
-      Unreliable: false
-      Value: true
-
-    - Class: rviz/Image
-      Enabled: true
-      Image Topic: /prius/back_camera/image_raw
-      Max Value: 1
-      Median window: 5
-      Min Value: 0
-      Name: back_camera
-      Normalize Range: true
-      Queue Size: 2
-      Transport Hint: raw
-      Unreliable: false
-      Value: true
-    - Class: rviz/Image
-      Enabled: true
-      Image Topic: /prius/left_camera/image_raw
-      Max Value: 1
-      Median window: 5
-      Min Value: 0
-      Name: left_camera
-      Normalize Range: true
-      Queue Size: 2
-      Transport Hint: raw
-      Unreliable: false
-      Value: true
-    - Class: rviz/Image
-      Enabled: true
-      Image Topic: /prius/right_camera/image_raw
-      Max Value: 1
-      Median window: 5
-      Min Value: 0
-      Name: right_camera
+      Name: satellite
       Normalize Range: true
       Queue Size: 2
       Transport Hint: raw

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(self_driving_car)
-
+set(CMAKE_CXX_STANDARD 17)
 find_package(catkin REQUIRED COMPONENTS
   fake_localization
   gazebo_ros
@@ -49,8 +49,8 @@ include_directories(
 # add_executable(keyboard src/keyControl.cpp)
 # target_link_libraries(keyboard ${catkin_LIBRARIES})
 
-# add_executable(demo src/main.cpp)
-# target_link_libraries(demo ${catkin_LIBRARIES})
+add_executable(demo src/main.cpp)
+target_link_libraries(demo ${catkin_LIBRARIES})
 
 # add_executable(lanefl src/lane_follow.py)
 

@@ -5,28 +5,15 @@ from sensor_msgs.msg import Image as SensorImage
 from cv_bridge import CvBridge
 import cv2
 
-expected_deviation = -70
-Kp = 0.1
-Ki = 0.01
-Kd = 0.05
+expected_deviation = -60
+Kp = 0.05
+Ki = 0.0001
+Kd = 0.04
 error_prev = 0
 error_sum = 0
 
 pub_control = rospy.Publisher('/prius', Control, queue_size=1)
 pub = rospy.Publisher('/prius/front_camera/lane_detection', SensorImage, queue_size=1)
-
-def calculate_deviation(lane_contours, image_width):
-    centroids = []
-    for contour in lane_contours:
-        x, _, w, _ = cv2.boundingRect(contour)
-        cx = x + w // 2
-        centroids.append(cx)
-
-    if centroids:
-        deviation = np.mean(centroids) - image_width / 2
-        return deviation
-    else:
-        return None
 
 def control_car(deviation):
     global error_prev, error_sum
@@ -50,6 +37,19 @@ def control_car(deviation):
     pub_control.publish(control_msg)
 
     error_prev = error
+
+def calculate_deviation(lane_contours, image_width):
+    centroids = []
+    for contour in lane_contours:
+        x, _, w, _ = cv2.boundingRect(contour)
+        cx = x + w // 2
+        centroids.append(cx)
+
+    if centroids:
+        deviation = np.mean(centroids) - image_width / 2
+        return deviation
+    else:
+        return None
 
 def image_callback(msg):
     try:
@@ -92,6 +92,7 @@ def image_callback(msg):
 
     except Exception as e:
         rospy.logerr(e)
+
 
 def lane_detection_node():
     rospy.init_node('lane_detection')
