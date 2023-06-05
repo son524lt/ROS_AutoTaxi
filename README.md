@@ -11,31 +11,31 @@ ROS_AutoTaxi is a self-driving car project developed using ROS Noetic. It simula
 
 ## Dependencies
 
-- This project requires on ROS Noetic. To install ROS Noetic, please follow instruction in this page: [ROS Noetic Installation on Ubuntu](http://wiki.ros.org/noetic/Installation/Ubuntu)
+This project requires on ROS Noetic. To install ROS Noetic, please follow instruction in this page: [ROS Noetic Installation on Ubuntu](http://wiki.ros.org/noetic/Installation/Ubuntu)
 
 - To install all ROS dependencies of this project, run command: 
     ```bash
     rosdep install --from-paths src --ignore-src -r -y
     ```
 
-- This project requires OpenCV, to install OpenCV, do the following commands:
+This project requires OpenCV, to install OpenCV, do the following commands:
 
-    Install OpenCV using the package manager
+- Install OpenCV using the package manager
     ```bash
     sudo apt-get install libopencv-dev
 
     ```
 
-    Install required dependencies
+- Install required dependencies
     ```bash
     sudo apt-get install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
     ```
 
-    Clone the OpenCV repository
+- Clone the OpenCV repository
     ```bash
     git clone https://github.com/opencv/opencv.git
     ```
-    Create a build directory and navigate into it and configure the build
+- Create a build directory and navigate into it and configure the build
     ```bash
     cd opencv
     mkdir build
@@ -43,20 +43,20 @@ ROS_AutoTaxi is a self-driving car project developed using ROS Noetic. It simula
     cmake ..
     ```
 
-    Build and install OpenCV
+- Build and install OpenCV
     ```bash
     make -j4 # Use a higher number if you have more CPU cores
     sudo make install
     ```
 
 ## Installation
-- To install this project, follow these steps
-    Clone my repository
+To install this project, follow these steps
+- Clone my repository
     ```bash
     git clone https://github.com/son524lt/ROS_AutoTaxi.git
     ```
 
-    Make the project
+- Make the project
     ```bash
     catkin_make
     ```
