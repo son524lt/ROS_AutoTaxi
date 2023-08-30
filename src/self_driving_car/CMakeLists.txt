@@ -29,7 +29,7 @@ include_directories(
   include ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE_DIRS} ${SDFormat_INCLUDE_DIRS} 
 )
 
-find_package(ignition-msgs1 REQUIRED)
+find_package(ignition-msgs7 REQUIRED)
 find_package(gazebo 11 REQUIRED)
 add_library(PriusHybridPlugin SHARED plugins/PriusHybridPlugin.cc)
 target_link_libraries(PriusHybridPlugin ${GAZEBO_LIBRARIES} ${IGNITION-MSGS_LIBRARIES} gazebo) 
@@ -57,4 +57,3 @@ target_link_libraries(demo ${catkin_LIBRARIES})
 # set_target_properties(lanefl PROPERTIES
 #     RUNTIME_OUTPUT_DIRECTORY ${CATKIN_DEVEL_PREFIX}/${CATKIN_PACKAGE_BIN_DESTINATION}
 #   )
-
